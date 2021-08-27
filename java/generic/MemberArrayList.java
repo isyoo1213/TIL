@@ -1,30 +1,59 @@
-public class Member {
-	
-	private int memberId;        //회원 아이디
-	private String memberName;   //회원 이름
+import java.util.ArrayList;
+import java.util.Iterator;
 
-	public Member(int memberId, String memberName){ //생성자
-		this.memberId = memberId;
-		this.memberName = memberName;
+public class MemberArrayList {
+	
+	private ArrayList<Member> arrayList;
+	//ArrayList도 Object의 자식 클래스이므로
+	//제네릭 설정 안할 경우 인스턴스 사용시 다운캐스팅 해야함
+	
+	
+	public MemberArrayList() {
+		arrayList = new ArrayList<>();
 	}
 	
-	public int getMemberId() {  //
-		return memberId;
-	}
-	public void setMemberId(int memberId) {
-		this.memberId = memberId;
-	}
-	public String getMemberName() {
-		return memberName;
-	}
-	public void setMemberName(String memberName) {
-		this.memberName = memberName;
+	public MemberArrayList(int size) {
+		arrayList = new ArrayList<>(size);
 	}
 	
-	@Override
-	public String toString(){   //toString 메소드 오버로딩
-		return memberName + " 회원님의 아이디는 " + memberId + "입니다";
+	public void addMember(Member member) {
+		arrayList.add(member);
 	}
-
+	
+	public boolean removeMember(int memberId) {
+		/*for(int i = 0; i < arrayList.size(); i++) {
+			Member member = arrayList.get(i);
+			
+			int tempId = member.getMemberId();
+			if (tempId == memberId) {
+				arrayList.remove(i);
+				return true;
+			}
+		}*/
+		
+		Iterator<Member> ir = arrayList.iterator();
+		//제네릭 지정하지 않을 시 Object
+		//객체를 순회하는 것
+		while(ir.hasNext()) {
+			Member member = ir.next();
+			
+			int tempId = member.getMemberId();
+			if (tempId == memberId) {
+				arrayList.remove(member);
+				//객체를 삭제
+				return true;
+			}
+		}
+		
+		System.out.println(memberId + "가 존재하지 않습니다.");
+		return false;
+	}
+	
+	public void showAllmember() {
+		for( Member member : arrayList) {
+			System.out.println(member);
+		}
+		System.out.println();
+	}
 
 }
