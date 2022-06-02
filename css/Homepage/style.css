@@ -41,6 +41,28 @@ p {
     letter-spacing: -0.01em;
 }
 
+.fill-button {
+    /* flex vs inline-flex는 container의 수직, 수평 구조에만 영향
+    내부 item들에 적용되는 것이 아님 */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 48px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: -0.05em;
+    color: #fff;
+    background-color: #3040c4;
+}
+
+.fill-button.inverted {
+    color: #3040c4;
+    background-color: #fff;
+}
+
 /* Landing */
 .landing {
     background-color: #FDDED8;
