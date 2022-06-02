@@ -113,4 +113,31 @@ p {
         font-size: 22px;
         line-height: 1.3636363636;
     }
+
+    .fill-button {
+        width: 160px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 1.5555;
+    }
+
+    /* Landing */
+    .landing-content {
+        height: auto;
+        padding: 120px 0;
+    }
+
+    .landing-title {
+        font-size: 70px;
+        line-height: 1.02857;
+        margin-bottom: 32px;
+    }
+
+    .landing-desc {
+        margin-bottom: 32px;
+    }
+
+    .landing .button-group .fill-button:first-child {
+        margin-right: 16px;
+    }
 }
