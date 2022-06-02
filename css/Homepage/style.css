@@ -56,11 +56,16 @@ p {
     letter-spacing: -0.05em;
     color: #fff;
     background-color: #3040c4;
+    transition: opacity 300ms ease-in-out;
 }
 
 .fill-button.inverted {
     color: #3040c4;
     background-color: #fff;
+}
+
+.fill-button:hover {
+    opacity: 0.5;
 }
 
 /* Landing */
