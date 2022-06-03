@@ -68,6 +68,22 @@ p {
     opacity: 0.5;
 }
 
+.section-category {
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+}
+
+.section-title {
+    font-size: 34px;
+    line-height: 1.058823529411765;
+    letter-spacing: -0.03em;
+    color: #2B292D;
+    margin-bottom: 24px;
+}
+
 /* Landing */
 .landing {
     background-color: #FDDED8;
