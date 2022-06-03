@@ -167,6 +167,18 @@ p {
         line-height: 1.5555;
     }
 
+    .section-category {
+        font-size: 22px;
+        line-height: 1.090909090909091;
+        margin-bottom: 16px;
+    }
+
+    .section-title {
+        font-size: 56px;
+        line-height: 1;
+        margin-bottom: 32px;
+    }
+
     /* Landing */
     .landing-content {
         height: auto;
