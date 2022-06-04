@@ -68,6 +68,10 @@ p {
     opacity: 0.5;
 }
 
+.section {
+    padding: 80px 0;
+}
+
 .section-category {
     display: block;
     font-size: 16px;
@@ -172,6 +176,10 @@ p {
         line-height: 1.5555;
     }
 
+    .section {
+        padding-bottom: 96px;
+    }
+
     .section-category {
         font-size: 22px;
         line-height: 1.090909090909091;
@@ -212,5 +220,10 @@ p {
 
     .service .col-12:first-child {
         margin-bottom: 0;
+    }
+
+    /* Program */
+    .program {
+        text-align: center;
     }
 }
