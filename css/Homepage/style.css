@@ -145,6 +145,11 @@ p {
     color: #2B292D;
 }
 
+/* Program */
+.program .section-category {
+    color: #009B4D;
+}
+
 /* Custom grid - Fix container width */
 @media screen and (min-width: 1200px) {
     .container {
