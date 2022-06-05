@@ -255,4 +255,13 @@ p {
     .program {
         text-align: center;
     }
+
+    .program-card img {
+        margin-bottom: 24px;
+    }
+
+    .program-card strong {
+        font-size: 20px;
+        line-height: 1.2;
+    }
 }
