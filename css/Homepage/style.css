@@ -154,6 +154,35 @@ p {
     color: #009B4D;
 }
 
+.program .col-md-4 {
+    margin-bottom: 20px;
+}
+
+.program .col-md-4:last-child {
+    margin-bottom: 0;
+}
+
+.program-card {
+    display: block;
+    padding: 24px 0 32px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.program-card img {
+    display: block;
+    width: auto;
+    height: 195px;
+    margin: 0 auto 16px;
+}
+
+.program .program-card strong {
+    font-size: 18px;
+    line-height: 1.333333333333333;
+    letter-spacing: -0.02em;
+}
+
 /* Custom grid - Fix container width */
 @media screen and (min-width: 1200px) {
     .container {
