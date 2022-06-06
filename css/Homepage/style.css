@@ -200,6 +200,35 @@ p {
     letter-spacing: -0.02em;
 }
 
+/* Curriculum */
+
+.curriculum .row:first-child{
+    margin-bottom: 48px;
+}
+
+.curriculum .row:last-child .col-12:first-child {
+    margin-bottom: 40px;
+}
+
+.curriculum .section-category {
+    color: #0189d1;
+}
+
+.curriculum .section-desc {
+    margin-bottom: 32px;
+}
+
+.curriculum-image {
+    display: none;
+}
+
+.curriculum-detail-desc {
+    font-size: 15px;
+    line-height: 1.46666666666;
+    letter-spacing: -0.01em;
+    color: #2b292d;
+}
+
 /* Custom grid - Fix container width */
 @media screen and (min-width: 1200px) {
     .container {
