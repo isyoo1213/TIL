@@ -150,8 +150,8 @@ p {
 }
 
 /* Program */
-.program .section-category {
-    color: #009B4D;
+.program .row:first-child {
+    margin-bottom: 32px;
 }
 
 .program .col-md-4 {
@@ -160,6 +160,10 @@ p {
 
 .program .col-md-4:last-child {
     margin-bottom: 0;
+}
+
+.program .section-category {
+    color: #009B4D;
 }
 
 .program-card {
@@ -267,6 +271,10 @@ p {
     /* Program */
     .program {
         text-align: center;
+    }
+
+    .program .row:first-child {
+        margin-bottom: 72px;
     }
 
     .program-card img {
