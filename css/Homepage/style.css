@@ -262,7 +262,7 @@ p {
     }
 
     .section-title {
-        font-size: 56px;
+        font-size: 45px;
         line-height: 1;
         margin-bottom: 32px;
     }
@@ -313,5 +313,36 @@ p {
     .program-card strong {
         font-size: 20px;
         line-height: 1.2;
+    }
+
+    /* Curriculum */
+
+    .curriculum .row:first-child {
+        margin-bottom: 24px;
+    }
+
+    .curriculum .row:last-child .col-12:first-child {
+        margin-bottom: 0;
+    }
+
+    .curriculum .section-desc {
+        margin-bottom: 72px;
+    }
+
+    .curriculum-image {
+        display: block;
+    }
+
+    .curriculum-image img {
+        display: block;
+        width: 100%;
+        max-width: 425px;
+        height: auto;
+    }
+
+    .curriculum .curriculum-detail-desc {
+        font-size: 18px;
+        line-height: 1.444444444;
+
     }
 }
