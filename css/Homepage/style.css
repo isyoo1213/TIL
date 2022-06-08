@@ -275,7 +275,7 @@ p {
     margin-bottom: 8px;
 }
 
-.subscription-form button {
+.subscription-form .fill-button {
     width: 100%;
 }
 
@@ -304,7 +304,7 @@ p {
     /* Reset CSS - font size */
     p{
         font-size: 22px;
-        line-height: 1.3636363636;
+        line-height: 1.454545454545455;
     }
 
     .fill-button {
@@ -407,5 +407,58 @@ p {
         font-size: 18px;
         line-height: 1.444444444;
 
+    }
+
+    /* Subscription */
+
+    .subscription {
+        text-align: left;
+        padding: 80px 0;
+    }
+
+    .subscription-image {
+        padding: 8px 0;
+    }
+
+    .subscription-image img {
+        width: auto;
+        height: 285px;
+        margin: 0;
+    }
+
+    .subscription-title {
+        font-size: 40px;
+    }
+
+    .subscription .input-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+    }
+
+    .subscription .input-group input {
+        height: 56px;
+        font-size: 18px;
+        line-height: 1.3333333333;
+        margin-bottom: 0;
+        margin-right: 8px;
+    }
+/* flex 내 item 요소들의 길이 확인
+input - width: 100% 
+button - width: 160px 
+>> 부모인 input-group은 530px로 고정 
++ NoWrap인 상황
+>> 한 줄로 표현하기 위해 input과 button의 길이 자동 조정 됨
+>> botton의 flex-shrink: 0 을 통해 길이 유지
+*/
+
+    .subscription .input-group .fill-button {
+        flex-shrink: 0;
+        width: 160px;
+    }
+
+    .subscription-form .form-notice {
+        font-size: 14px;
+        line-height: 1.714285714285714;
     }
 }
