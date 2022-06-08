@@ -482,4 +482,24 @@ button - width: 160px
         font-size: 14px;
         line-height: 1.714285714285714;
     }
+
+    /* Footer */
+
+    .footer {
+        padding: 16px 0;
+    }
+
+    .footer .footer-links {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer .footer-link {
+        margin-right: 16px;
+        margin-bottom: 0;
+    }
+
+    .footer .footer-link:last-child {
+        margin-right: 0;
+    }
 }
