@@ -50,6 +50,7 @@ p {
     width: 140px;
     height: 48px;
     border-radius: 2px;
+    border: none;
     font-size: 15px;
     font-weight: 700;
     line-height: 1.6;
@@ -228,6 +229,68 @@ p {
     letter-spacing: -0.01em;
     color: #2b292d;
 }
+
+/* Subscription */
+
+.subscription {
+    background-color: #F2F8FA;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.subscription-image {
+    padding: 25px 0;
+}
+
+.subscription-image img {
+    display: block;
+    width: auto;
+    height: 190px;
+    margin: 0 auto;
+}
+
+.subscription-title {
+    color: #2B292D;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    margin-bottom: 16px;
+}
+
+.subscription-desc {
+    margin-bottom: 24px;
+}
+
+.subscription-form .input-group {
+    margin-bottom: 8px;
+}
+
+.subscription-form input {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    border-radius: 2px;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 8px;
+}
+
+.subscription-form button {
+    width: 100%;
+}
+
+.subscription .form-notice {
+    font-size: 13px;
+    line-height: 1.538461538461538;
+    letter-spacing: 0;
+    color: #7B7B7E;
+}
+
+.subscription-form .form-notice a {
+    text-decoration: underline;
+    color: #3040c4;
+}
+
 
 /* Custom grid - Fix container width */
 @media screen and (min-width: 1200px) {
